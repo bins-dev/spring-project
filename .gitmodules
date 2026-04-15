@@ -4,3 +4,6 @@
 [submodule "spring-data-commons"]
 	path = spring-data-commons
 	url = https://github.com/bins-dev/spring-data-commons.git
+[submodule "spring-boot-admin"]
+	path = spring-boot-admin
+	url = https://github.com/bins-dev/spring-boot-admin.git
