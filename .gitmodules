@@ -22,3 +22,6 @@
 [submodule "spring-data-jpa"]
 	path = spring-data-jpa
 	url = https://github.com/bins-dev/spring-data-jpa.git
+[submodule "spring-data-mongodb"]
+	path = spring-data-mongodb
+	url = https://github.com/bins-dev/spring-data-mongodb.git
