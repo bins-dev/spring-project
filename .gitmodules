@@ -25,3 +25,6 @@
 [submodule "spring-data-mongodb"]
 	path = spring-data-mongodb
 	url = https://github.com/bins-dev/spring-data-mongodb.git
+[submodule "spring-ws"]
+	path = spring-ws
+	url = https://github.com/bins-dev/spring-ws.git
