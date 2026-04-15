@@ -19,3 +19,6 @@
 [submodule "spring-data-redis"]
 	path = spring-data-redis
 	url = https://github.com/bins-dev/spring-data-redis.git
+[submodule "spring-data-jpa"]
+	path = spring-data-jpa
+	url = https://github.com/bins-dev/spring-data-jpa.git
