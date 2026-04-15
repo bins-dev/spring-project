@@ -16,3 +16,6 @@
 [submodule "spring-kafka"]
 	path = spring-kafka
 	url = https://github.com/bins-dev/spring-kafka.git
+[submodule "spring-data-redis"]
+	path = spring-data-redis
+	url = https://github.com/bins-dev/spring-data-redis.git
