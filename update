@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# 查找当前目录下所有以update开头的脚本并执行
+
+shopt -s nullglob
+scripts=(update*)
+
+for script in "${scripts[@]}"; do
+    # 跳过自身
+    if [ "$script" = "update" ]; then
+        continue
+    fi
+    # 跳过目录
+    if [ ! -f "$script" ]; then
+        continue
+    fi
+    # 确保文件可执行，若不可执行则尝试添加执行权限
+    if [ ! -x "$script" ]; then
+        chmod +x "$script"
+    fi
+    echo "执行: $script"
+    ./"$script"
+done
