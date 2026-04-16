@@ -21,3 +21,35 @@ for script in "${scripts[@]}"; do
     echo "执行: $script"
     ./"$script"
 done
+
+# 获取git仓库根目录
+GIT_ROOT=$(git rev-parse --show-toplevel 2>/dev/null)
+
+if [ -z "$GIT_ROOT" ]; then
+    echo "Error: 当前目录不在git仓库中"
+    exit 1
+fi
+
+# 添加所有文件修改
+git add -A
+
+# 获取暂存区变更文件列表
+CHANGED_FILES=$(git diff --cached --name-only)
+
+if [ -z "$CHANGED_FILES" ]; then
+    echo "没有需要提交的变更"
+    exit 0
+fi
+
+# 提取顶层文件名或目录名并去重
+TOP_NAMES=$(echo "$CHANGED_FILES" | cut -d'/' -f1 | sort -u)
+
+# 用分号连接，追加"更新"
+COMMIT_MSG=$(echo "$TOP_NAMES" | paste -sd ';' -)"更新"
+
+# 提交
+git commit -m "$COMMIT_MSG"
+
+# 推送到远程仓库
+git push origin main
+
