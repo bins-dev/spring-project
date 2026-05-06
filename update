@@ -39,8 +39,11 @@ for script in "${scripts[@]}"; do
     # 获取暂存区变更文件列表
     CHANGED_FILES=$(git diff --cached --name-only)
 
+    echo -e "\e[34m-----------------------------------------------\e[0m"
+    echo -e "\e[34m开始推送更新到origin仓库\e[0m"
+    echo -e "\e[34m-----------------------------------------------\e[0m"
     if [ -z "$CHANGED_FILES" ]; then
-        echo "没有需要提交的变更"
+        echo -e "\e[34m没有需要提交的变更\e[0m"
 	echo ""
 	continue
     fi
