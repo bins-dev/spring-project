@@ -12,6 +12,7 @@
 [submodule "spring-framework"]
 	path = spring-framework
 	url = https://github.com/bins-dev/spring-framework.git
+	branch = main
 [submodule "spring-security"]
 	path = spring-security
 	url = https://github.com/bins-dev/spring-security.git
