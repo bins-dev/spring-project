@@ -1,7 +1,6 @@
 #!/bin/bash
 PROJECT_NAME=spring-boot-admin
 cd ${PROJECT_NAME}
-git pull ${PROJECT_NAME} master
-git push origin master
-git fetch ${PROJECT_NAME} --tags master
-git push origin master --tags
+git checkout master
+git pull ${PROJECT_NAME} master && git push origin master
+git fetch ${PROJECT_NAME} --tags master && git push origin master --tags

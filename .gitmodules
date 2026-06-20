@@ -9,6 +9,7 @@
 [submodule "spring-boot-admin"]
 	path = spring-boot-admin
 	url = https://github.com/bins-dev/spring-boot-admin.git
+	branch = master
 [submodule "spring-framework"]
 	path = spring-framework
 	url = https://github.com/bins-dev/spring-framework.git
