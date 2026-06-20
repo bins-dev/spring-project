@@ -25,6 +25,7 @@
 [submodule "spring-data-redis"]
 	path = spring-data-redis
 	url = https://github.com/bins-dev/spring-data-redis.git
+	branch = main
 [submodule "spring-data-jpa"]
 	path = spring-data-jpa
 	url = https://github.com/bins-dev/spring-data-jpa.git
@@ -32,6 +33,8 @@
 [submodule "spring-data-mongodb"]
 	path = spring-data-mongodb
 	url = https://github.com/bins-dev/spring-data-mongodb.git
+	branch = main
 [submodule "spring-ws"]
 	path = spring-ws
 	url = https://github.com/bins-dev/spring-ws.git
+	branch = main
