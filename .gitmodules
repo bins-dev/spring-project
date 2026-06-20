@@ -1,6 +1,7 @@
 [submodule "spring-boot"]
 	path = spring-boot
 	url = https://github.com/bins-dev/spring-boot.git
+	branch = main
 [submodule "spring-data-commons"]
 	path = spring-data-commons
 	url = https://github.com/bins-dev/spring-data-commons.git
